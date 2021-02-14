@@ -1,0 +1,17 @@
+root@fuxi16:~# docker run -d --name clock devopsdockeruh/exec_bash_exercise
+fd5648184a064d8a077c6db6414b74451885b2f56334fb3cdc1640679356c229
+root@fuxi16:~# docker exec clock tail ./logs.txt
+Sun, 14 Feb 2021 13:21:01 GMT
+Sun, 14 Feb 2021 13:21:04 GMT
+Sun, 14 Feb 2021 13:21:07 GMT
+Sun, 14 Feb 2021 13:21:10 GMT
+root@fuxi16:~# docker exec clock tail ./logs.txt
+Sun, 14 Feb 2021 13:21:01 GMT
+Sun, 14 Feb 2021 13:21:04 GMT
+Sun, 14 Feb 2021 13:21:07 GMT
+Sun, 14 Feb 2021 13:21:10 GMT
+Secret message is:
+"Docker is easy"
+Sun, 14 Feb 2021 13:21:16 GMT
+Sun, 14 Feb 2021 13:21:19 GMT
+

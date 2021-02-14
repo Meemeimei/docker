@@ -1,0 +1,13 @@
+docker run -d --name ex14 devopsdockeruh/exec_bash_exercise
+f38a59ca32b7b01322204dd0fe2b1dbe7c7922f24c0c1d1afc61692a546cf94a
+root@fuxi16:~# docker exec -it ex14 bash
+root@f38a59ca32b7:/usr/app# /usr/app# tail -F logs.txt
+bash: /usr/app#: No such file or directory
+root@f38a59ca32b7:/usr/app#  tail -F logs.txt
+Thu, 07 Jan 2021 13:21:32 GMT
+Thu, 07 Jan 2021 13:21:35 GMT
+Thu, 07 Jan 2021 13:21:38 GMT
+Thu, 07 Jan 2021 13:21:41 GMT
+Secret message is:
+"Docker is easy"
+
